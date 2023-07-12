@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LieferDevto</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body onload="render()" id="content">
+    <header class="header">
+      <img src="img/LieferandoLogo.png" class="lieferLogo" alt="" />
+      <p class="location">Wallnerstraße 7, 1010 Wien</p>
+      <div class="logo_group">
+        <img src="icon/osterreich.png" class="logo" alt="" />
+        <img src="icon/speisekarte.png" class="logo" alt="" />
+      </div>
+    </header>
+    <section class="main_area">
+      <section class="section_left">
+        <img src="img/pizza.jpg" class="pizza_big" alt="" />
+        <div class="restaurant">
+          <h1>Pizza Maus</h1>
+          <div>
+            <img src="icon/die-info.png" class="logo" alt="" />
+            <img src="icon/herz.png" class="logo" alt="" />
+          </div>
+        </div>
+        <div class="sterne">
+          <img src="icon/sterne.png" alt="" />
+          <p>722 Bewertungen</p>
+        </div>
+        <div class="lieferinfo">
+          <img src="icon/uhr.png" class="lieferIcon" alt="" />
+          <p>Lieferung in 20-30 min •</p>
+          <img src="icon/lieferung.png" class="lieferIcon" alt="" />
+          <p>Kostenlos •</p>
+          <img src="icon/einkaufstasche.png" class="lieferIcon" alt="" />
+          <p>Min. 12,00 €</p>
+        </div>
+        <div id="content_cards"></div>
+      </section>
+      <section class="section_right">
+        <div class="shoppingCard">
+          <h2>Warenkorb</h2>
+          <div id="shoppingCard_content"></div>
+          <div>
+            <p>Gesamtpreis</p>
+            <div id="total"></div>
+          </div>   
+          <p onclick="finishOrder()" class="orderButton">Bestellen</p>  
+        </div>
+      </section>
+    </section>
+    <section class="basket_bottom">
+      <div class="basket_bottom_element" id="basket_bottom" onclick="basketExtern()"></div>
+      <div class="basket_bottom_element" id="order_bottom" onclick="finishOrder()"></div>
+    </section>
+  </body>
+</html>

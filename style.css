@@ -1,0 +1,311 @@
+/*generall*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+
+h2 {
+    margin-block-start: 16px;
+    margin-block-end: 0px;
+}
+
+table {
+    width: auto;
+    margin: 0px 8px 0px 8px;
+}
+
+td:first-child {
+    width: 23px;
+}
+
+td:nth-child(2) {
+   width: 150px;
+}
+
+td:nth-child(3) {
+    width: 43px;
+}
+
+td:nth-child(4) {
+    width: 43px;
+}
+
+td:nth-child(5) {
+    width: 43px;
+}
+
+p {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.d_none {
+    display: none;
+}
+/*generall*/
+
+/*head*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 36px 16px 36px;
+    font-size: 22px;
+    font-weight: bold;
+    box-shadow: 0 4px 2px -2px lightgray;
+}
+
+.location {
+    margin: 0px 16px 0px 16px;
+}
+
+.logo {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+
+}
+
+.logo:hover {
+    background: rgb(219, 218, 218);
+}
+
+.lieferLogo {
+    width: 256px;
+    object-fit: cover;
+}
+
+.logo_group {
+    display: flex;
+    gap: 24px;
+
+}
+
+/*head*/
+
+
+/*main*/
+.main_area {
+    display: flex;
+    justify-content: center;
+}
+.section_left {
+    width: 100%;
+}
+
+.pizza_big {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.restaurant {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 16px 0px 16px;
+    align-items: center;
+}
+
+.restaurant h1 {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    font-size: 35px;
+}
+
+.sterne {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 12px 12px 14px;
+}
+
+.sterne img {
+    width: 112px;
+}
+
+.sterne p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.lieferinfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0px 16px 0px 16px;
+
+}
+
+.lieferinfo p {
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+
+.lieferIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 16px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*main*/
+
+/*basket*/
+
+.section_right {
+    box-shadow: -15px -12px 1px -12px lightgray;
+    width: 500px;    
+    float: right;
+
+}
+
+.section_right_OnlyBasket {
+    width: 500px;    
+    float: right;
+}
+
+.shoppingCard {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 3px;
+}
+
+.shoppingCardPic {
+    width: 70px;
+    height: 70px;
+    margin-top: 24px;
+}
+
+.logo_basket {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+}
+
+.logo_basket:hover {
+    scale: 1.1;
+}
+
+.orderButton {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #e69e29 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #fae85f;
+}
+.orderButton:hover {
+    background:linear-gradient(to bottom, #e69e29 5%, #ffec64 100%);
+    background-color:#e69e29;
+}
+.orderButton:active {
+    position:relative;
+    top:1px;
+}
+
+.basket_bottom {
+    display: none;
+}
+
+.basket_bottom_element{
+    display: none;
+}
+
+/*basket*/
+
+/*endHTML*/
+
+.section_main_end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 300px;
+}
+
+.thankText {
+    background: linear-gradient(to bottom, #ffec64 5%, #e69e29 100%);
+    border-radius: 6px;
+    border: 1px solid #ffaa22; 
+    font-size: 50px;
+    font-weight: bold;
+    padding: 6px 24px; 
+    text-align: center;  
+    margin: 0px 32px 0px 32px; 
+}
+/*endHTML*/
+
+/*responiveClasses*/
+@media (max-width: 780px){
+    .basket_bottom{
+        display: flex;        
+        position: sticky;
+        bottom: 3px;
+    }
+    .basket_bottom_element{
+        display: flex;
+        width: 50%;
+        background:linear-gradient(to bottom, #ffec64 5%, #e69e29 100%);
+        background-color:#ffec64;
+        border: 2px solid white;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 10px;
+        margin: 0px 18px 10px 18px;
+        cursor: pointer;
+    }
+}
+
+@media  (max-width: 780px) {
+    .section_right {
+        display: none;
+    }
+    .location {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .lieferinfo {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .logo_group {
+        display: none;
+    }
+}
+
+/*responiveClasses*/
